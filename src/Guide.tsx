@@ -1,5 +1,5 @@
 import WhatIsFastGuide from "./lessons/WhatIsFastGuide";
-import { FastGuideChapter, FastGuideMain } from "@mikeabbott10/react-fast-guide";
+import { FastGuideChapter, FastGuideMain } from "react-fast-guide";
 import GettingStarted from "./lessons/GettingStarted";
 import TheGuideInput from "./lessons/TheGuideInput";
 import TheOptionalKeys from "./lessons/TheOptionalKeys";

@@ -12,9 +12,9 @@ const GettingStarted = () => {
                 tabs={['npm', 'Yarn']} 
                 values={[
                     <CodeContainer 
-                        code={<span><span style={{color: "#73e3ee"}}>npm install</span> @mikeabbott10/react-fast-guide</span>}/>, 
+                        code={<span><span style={{color: "#73e3ee"}}>npm install</span> react-fast-guide</span>}/>, 
                     <CodeContainer 
-                        code={<span><span style={{color: "#73e3ee"}}>yarn add</span> @mikeabbott10/react-fast-guide</span>}/>
+                        code={<span><span style={{color: "#73e3ee"}}>yarn add</span> react-fast-guide</span>}/>
                     ]}
             />
 
@@ -27,7 +27,7 @@ const GettingStarted = () => {
                         <span style={{color: "#d7b7ff"}}>import </span> 
                         &#123; <span style={{color: "#9decb3"}}>FastGuide</span> &#125; 
                         <span style={{color: "#d7b7ff"}}> from </span> 
-                        <span style={{color: "#ffe28f"}}>"@mikeabbott10/react-fast-guide"</span> 
+                        <span style={{color: "#ffe28f"}}>"react-fast-guide"</span> 
                     </span><br/><br/>
                     <span>
                         <span style={{color: "#d7b7ff"}}>const</span> <span style={{color: "#73e3ee"}}>my_guide</span> = ...

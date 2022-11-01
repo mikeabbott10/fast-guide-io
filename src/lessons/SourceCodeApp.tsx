@@ -14,7 +14,7 @@ const SourceCodeApp = () => {
                         <span style={{color: "#d7b7ff"}}>import </span> 
                         &#123; <span style={{color: "#9decb3"}}>FastGuide</span> &#125; 
                         <span style={{color: "#d7b7ff"}}> from </span> 
-                        <span style={{color: "#ffe28f"}}>"@mikeabbott10/react-fast-guide"</span> 
+                        <span style={{color: "#ffe28f"}}>"react-fast-guide"</span> 
                     </span><br/>
                     <span>
                         <span style={{color: "#d7b7ff"}}>import </span> 

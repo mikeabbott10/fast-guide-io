@@ -1,4 +1,4 @@
-import { FastGuide } from "@mikeabbott10/react-fast-guide";
+import { FastGuide } from "react-fast-guide";
 import { useContext, useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
