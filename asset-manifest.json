@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fast-guide-io/static/css/main.730e705f.css",
-    "main.js": "/fast-guide-io/static/js/main.342fd834.js",
+    "main.js": "/fast-guide-io/static/js/main.6af86828.js",
     "index.html": "/fast-guide-io/index.html",
     "main.730e705f.css.map": "/fast-guide-io/static/css/main.730e705f.css.map",
-    "main.342fd834.js.map": "/fast-guide-io/static/js/main.342fd834.js.map"
+    "main.6af86828.js.map": "/fast-guide-io/static/js/main.6af86828.js.map"
   },
   "entrypoints": [
     "static/css/main.730e705f.css",
-    "static/js/main.342fd834.js"
+    "static/js/main.6af86828.js"
   ]
 }
