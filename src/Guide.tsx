@@ -6,6 +6,7 @@ import TheOptionalKeys from "./lessons/TheOptionalKeys";
 import NavigationAndHistory from "./lessons/NavigationAndHistory";
 import SourceCodeApp from "./lessons/SourceCodeApp";
 import SourceCodeGuide from "./lessons/SourceCodeGuide";
+import UsefulLinks from "./lessons/UsefulLinks";
 
 const chapters: FastGuideChapter[] = [
 	{ // chapter
@@ -31,6 +32,10 @@ const chapters: FastGuideChapter[] = [
 								}
 							]
 						}
+					},
+					{ // lesson
+						title: "Useful links",
+						body: <UsefulLinks/>
 					}
 				]
 			},
