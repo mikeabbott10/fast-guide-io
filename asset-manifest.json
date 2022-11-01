@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fast-guide-io/static/css/main.2e2dfd32.css",
+    "main.js": "/fast-guide-io/static/js/main.3d2c0cc2.js",
+    "index.html": "/fast-guide-io/index.html",
+    "main.2e2dfd32.css.map": "/fast-guide-io/static/css/main.2e2dfd32.css.map",
+    "main.3d2c0cc2.js.map": "/fast-guide-io/static/js/main.3d2c0cc2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e2dfd32.css",
+    "static/js/main.3d2c0cc2.js"
+  ]
+}
