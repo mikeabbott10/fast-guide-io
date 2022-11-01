@@ -39,6 +39,6 @@ body.darkMode .header{
   color: white;
 }
 
-body.darkMode li{
+body.darkMode li.tab{
   color: white;
 }

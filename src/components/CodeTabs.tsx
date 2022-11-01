@@ -14,7 +14,7 @@ const CodeTabs = (props: CodeTabsProps) => {
         if(!props.values[i]) break;
         const tabText = props.tabs[i];
         tabsList.push(
-            <li key={i} onClick={() => setActiveTab(i)} 
+            <li className="tab" key={i} onClick={() => setActiveTab(i)} 
                 style={
                     activeTab===i ? {
                         marginTop: 0,
