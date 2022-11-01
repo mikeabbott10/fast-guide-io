@@ -1,3 +1,3 @@
 # React Fast Guide project github.io page
 
-[http://mikeabbott10.github.io/react-fast-guide](http://mikeabbott10.github.io/react-fast-guide)
+[https://mikeabbott10.github.io/fast-guide-io/](https://mikeabbott10.github.io/fast-guide-io/)
