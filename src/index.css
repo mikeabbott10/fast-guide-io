@@ -2,9 +2,9 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   line-height: 1.65;
-  font-family: Inter,-apple-system,Fira Sans,Droid Sans,sans-serif;
+  font-family: Inter, -apple-system, Fira Sans, Droid Sans, sans-serif;
   font-size: 16px;
   direction: ltr;
   font-feature-settings: "kern";
@@ -12,7 +12,33 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body.darkMode{
+  background-color: #252525;
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  z-index: 2;
+}
+.header svg{
+  margin: 1rem;
+  cursor: pointer;
+}
+
+
+body.darkMode .header{
+  background-color: black;
+  color: white;
+}
+
+body.darkMode li{
+  color: white;
 }

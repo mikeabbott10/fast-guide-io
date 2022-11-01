@@ -11,8 +11,10 @@ const GettingStarted = () => {
             <CodeTabs 
                 tabs={['npm', 'Yarn']} 
                 values={[
-                    <CodeContainer code={<span><span style={{color: "#73e3ee"}}>npm install</span> @mikeabbott10/react-fast-guide</span>}/>, 
-                    <CodeContainer code={<span><span style={{color: "#73e3ee"}}>yarn add</span> @mikeabbott10/react-fast-guide</span>}/>
+                    <CodeContainer 
+                        code={<span><span style={{color: "#73e3ee"}}>npm install</span> @mikeabbott10/react-fast-guide</span>}/>, 
+                    <CodeContainer 
+                        code={<span><span style={{color: "#73e3ee"}}>yarn add</span> @mikeabbott10/react-fast-guide</span>}/>
                     ]}
             />
 
@@ -25,22 +27,26 @@ const GettingStarted = () => {
                         <span style={{color: "#d7b7ff"}}>import </span> 
                         &#123; <span style={{color: "#9decb3"}}>FastGuide</span> &#125; 
                         <span style={{color: "#d7b7ff"}}> from </span> 
-                        <span style={{color: "#ffe28f"}}>'@mikeabbott10/react-fast-guide'</span> 
+                        <span style={{color: "#ffe28f"}}>"@mikeabbott10/react-fast-guide"</span> 
                     </span><br/><br/>
                     <span>
                         <span style={{color: "#d7b7ff"}}>const</span> <span style={{color: "#73e3ee"}}>my_guide</span> = ...
                     </span><br/><br/>
                     <span>
-                        function App() &#123; <br/>
-                        <span style={{paddingLeft: "2rem"}}><span style={{color: "#d7b7ff"}}>return ( </span></span><br/>
-                        <span style={{paddingLeft: "4rem"}}>&lt;<span style={{color: "#9decb3"}}>FastGuide</span> <i>guide</i>=&#123;<span style={{color: "#73e3ee"}}>my_guide</span>&#125;/&gt;</span>
+                        <span style={{color: "#d7b7ff"}}>function</span> App() &#123; <br/>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;<span style={{color: "#d7b7ff"}}>return ( </span></span><br/>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style={{color: "#9decb3"}}>FastGuide</span> 
+                        <i> guide</i>=&#123;<span style={{color: "#73e3ee"}}>my_guide</span>&#125;
+                        <i> enableHistory</i>=&#123;<span style={{color: "#73e3ee"}}>true</span>&#125;/&gt;</span>
                         <br/>
-                        <span style={{paddingLeft: "2rem"}}><span style={{color: "#d7b7ff"}}>)</span>;</span><br/>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;<span style={{color: "#d7b7ff"}}>)</span>;</span><br/>
                         &#125;
                     </span>
                     </>
                 }/>
-            <p>The only input of the component is <strong>your guide</strong>. It must be a json object that must adhere to a predefined format.</p>
+            <p>The "<i>guide</i>" input is an object representing <strong>your guide</strong>. It must be a json object that must adhere to a predefined format.<br/>
+            The "<i>enableHistory</i>" input sets a flag to enable navigation within the guide.</p>
+            <p>To learn about the two inputs please read the next chapter.</p>
         </>
     )
 }

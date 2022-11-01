@@ -3,10 +3,13 @@ import { FastGuideChapter, FastGuideMain } from "@mikeabbott10/react-fast-guide"
 import GettingStarted from "./lessons/GettingStarted";
 import TheGuideInput from "./lessons/TheGuideInput";
 import TheOptionalKeys from "./lessons/TheOptionalKeys";
+import NavigationAndHistory from "./lessons/NavigationAndHistory";
+import SourceCodeApp from "./lessons/SourceCodeApp";
+import SourceCodeGuide from "./lessons/SourceCodeGuide";
 
 const chapters: FastGuideChapter[] = [
 	{ // chapter
-		title: "1st chapter: Fast Guide",
+		title: "Fast Guide",
 		sections: [
 			{ // section
 				title: "About Fast Guide",
@@ -42,11 +45,11 @@ const chapters: FastGuideChapter[] = [
 							points: 10,
 							answers: [
 								{
-									text: "2",
+									text: "1",
 									isRight: false
 								},
 								{
-									text: "1",
+									text: "2",
 									isRight: true
 								},
 								{
@@ -55,7 +58,20 @@ const chapters: FastGuideChapter[] = [
 								}
 							]
 						}
-					},
+					}
+				]
+			},
+		]
+	},
+
+
+
+	{
+		title:"Documentation",
+		sections: [
+			{
+				title: "The Guide",
+				lessons: [
 					{ // lesson
 						title: "The guide object",
 						body: <TheGuideInput/>,
@@ -98,15 +114,58 @@ const chapters: FastGuideChapter[] = [
 					},
 				]
 			},
+			{
+				title: "The Navigation",
+				lessons: [
+					{ // lesson
+						title: "Navigation and history",
+						body: <NavigationAndHistory/>,
+						test: { // test
+							question: "What value does the input 'enableHistory' have in this guide you are reading right now? (tip: look at the URL)",
+							points: 10,
+							answers: [
+								{
+									text: "true",
+									isRight: true
+								},
+								{
+									text: "false",
+									isRight: false
+								}
+							]
+						}
+					},
+				]
+			}
 		]
 	},
+
+
+	{
+		title:"A Complete example",
+		sections: [
+			{
+				title: "Source Code",
+				lessons: [
+					{ // lesson
+						title: "App.jsx",
+						body: <SourceCodeApp/>
+					},
+					{ // lesson
+						title: "Guide.jsx",
+						body: <SourceCodeGuide/>
+					},
+				]
+			}
+		]
+	}
 ];
 
 const guide : FastGuideMain = {
 	title: "Fast Guide React Component",
 	cardLink: { // chapter link
 		url: "https://github.com/mikeabbott10/react-fast-guide",
-		text: "Go to the guide source"
+		text: "Well done! Go to the guide source"
 	},
 	chapters: chapters
 }

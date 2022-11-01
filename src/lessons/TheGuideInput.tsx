@@ -9,35 +9,43 @@ const TheGuideInput = () => {
 
             {/* FastGuideMain */}
             <p>In this lesson you will learn about the fundamental objects for using Fast Guide.</p>
-            <p>The <i>FastGuide</i> component takes only one input. It is a <b>js object</b> which represents the guide and is logically divided into chapters.<br /> It must adhere to the following format:</p>
+            <p>The <i>FastGuide</i> component takes one input named "<i>guide</i>". It is a <b>js object</b> which represents the guide and is logically divided into chapters.<br /> It must adhere to the following format:</p>
             <CodeTabs
                 tabs={['JSX', 'TSX']}
                 values={[
-                    <CodeContainer code={
+                    <CodeContainer 
+                        code={
                         <>
-                            <span style={{ color: "#d7b7ff" }}>const</span> <span style={{ color: "#73e3ee" }}>my_guide</span> = <span style={{ color: "#ffe28f" }}>&#123;</span> <br />
+                            <span style={{ color: "#97ebad" }}> // &lt;FastGuide guide=&#123;my_guide&#125; enableHistory=&#123;true&#125;/&gt;</span>
+                            <br/> <br/>
+                            <span style={{ color: "#d7b7ff" }}>const</span> <span style={{ color: "#73e3ee" }}>my_guide</span> = <span style={{ color: "#ffe28f" }}>&#123;</span> 
+                            <br />
 
-                            <span style={{ paddingLeft: "2rem" }}>title: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;title: </span>
                             <span style={{ color: "#ffe28f" }}>"This is the guide title"</span>,
-                            <span style={{ color: "#97ebad" }}> // the title of the guide</span><br />
+                            <span style={{ color: "#97ebad" }}> // the title of the guide</span>
+                            <br />
 
-                            <span style={{ paddingLeft: "2rem" }}>chapters: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;chapters: </span>
                             <span style={{ color: "#73e3ee" }}>my_chapters</span>
-                            <span style={{ color: "#97ebad" }}> // an array of chapters</span><br />
+                            <span style={{ color: "#97ebad" }}> // an array of chapters</span>
+                            <br />
 
                             &#125;
                         </>
                     } />,
                     <CodeContainer code={
                         <>
+                            <span style={{ color: "#97ebad" }}> // &lt;FastGuide guide=&#123;my_guide&#125; enableHistory=&#123;true&#125;/&gt;</span>
+                            <br/> <br/>
                             <span style={{ color: "#d7b7ff" }}>const</span> <span style={{ color: "#73e3ee" }}>my_guide</span> : <span style={{ color: "#9decb3" }}>FastGuideMain </span>
                             = <span style={{ color: "#ffe28f" }}>&#123;</span> <br />
 
-                            <span style={{ paddingLeft: "2rem" }}>title: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;title: </span>
                             <span style={{ color: "#ffe28f" }}>"This is the guide title"</span>,
                             <span style={{ color: "#97ebad" }}> // the title of the guide</span><br />
 
-                            <span style={{ paddingLeft: "2rem" }}>chapters: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;chapters: </span>
                             <span style={{ color: "#73e3ee" }}>my_chapters</span>
                             <span style={{ color: "#97ebad" }}> // an array of chapters</span><br />
 
@@ -55,18 +63,18 @@ const TheGuideInput = () => {
                     <CodeContainer code={
                         <>
                             <span style={{ color: "#d7b7ff" }}>const</span> <span style={{ color: "#73e3ee" }}>my_chapters</span> = [<br />
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#123;</span> <br />
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#123;</span> <br />
 
-                            <span style={{ paddingLeft: "4rem" }}>title: </span>
+                            <span >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: </span>
                             <span style={{ color: "#ffe28f" }}>"This is the title of the first chapter"</span>,
                             <span style={{ color: "#97ebad" }}> // the title of the chapter</span><br />
 
-                            <span style={{ paddingLeft: "4rem" }}>sections: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sections: </span>
                             <span style={{ color: "#73e3ee" }}>my_sections</span>
                             <span style={{ color: "#97ebad" }}> // an array of sections</span><br />
 
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#125;</span>, <br />
-                            <span style={{ paddingLeft: "2rem" }}>...</span>
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#125;</span>, <br />
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;...</span>
                             <span style={{ color: "#97ebad" }}> // other chapters</span><br />
                             ]
                         </>
@@ -75,18 +83,18 @@ const TheGuideInput = () => {
                         <>
                             <span style={{ color: "#d7b7ff" }}>const</span> <span style={{ color: "#73e3ee" }}>my_chapters</span>
                             : <span style={{ color: "#9decb3" }}>FastGuideChapter<span style={{ color: "#d7b7ff" }}>[]</span> </span> = [<br />
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#123;</span> <br />
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#123;</span> <br />
 
-                            <span style={{ paddingLeft: "4rem" }}>title: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: </span>
                             <span style={{ color: "#ffe28f" }}>"This is the title of the first chapter"</span>,
                             <span style={{ color: "#97ebad" }}> // the title of the chapter</span><br />
 
-                            <span style={{ paddingLeft: "4rem" }}>sections: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sections: </span>
                             <span style={{ color: "#73e3ee" }}>my_sections</span>
                             <span style={{ color: "#97ebad" }}> // an array of sections</span><br />
 
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#125;</span>, <br />
-                            <span style={{ paddingLeft: "2rem" }}>...</span>
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#125;</span>, <br />
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;...</span>
                             <span style={{ color: "#97ebad" }}> // other chapters</span><br />
                             ]
                         </>
@@ -103,18 +111,18 @@ const TheGuideInput = () => {
                     <CodeContainer code={
                         <>
                             <span style={{ color: "#d7b7ff" }}>const</span> <span style={{ color: "#73e3ee" }}>my_sections</span> = [<br />
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#123;</span> <br />
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#123;</span> <br />
 
-                            <span style={{ paddingLeft: "4rem" }}>title: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: </span>
                             <span style={{ color: "#ffe28f" }}>"This is the title of the first section"</span>,
                             <span style={{ color: "#97ebad" }}> // the title of the section</span><br />
 
-                            <span style={{ paddingLeft: "4rem" }}>lessons: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lessons: </span>
                             <span style={{ color: "#73e3ee" }}>my_lessons</span>
                             <span style={{ color: "#97ebad" }}> // an array of lessons</span><br />
 
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#125;</span>, <br />
-                            <span style={{ paddingLeft: "2rem" }}>...</span>
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#125;</span>, <br />
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;...</span>
                             <span style={{ color: "#97ebad" }}> // other sections</span><br />
                             ]
                         </>
@@ -123,18 +131,18 @@ const TheGuideInput = () => {
                         <>
                             <span style={{ color: "#d7b7ff" }}>const</span> <span style={{ color: "#73e3ee" }}>my_sections</span>
                             : <span style={{ color: "#9decb3" }}>FastGuideSection<span style={{ color: "#d7b7ff" }}>[]</span> </span> = [<br />
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#123;</span> <br />
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#123;</span> <br />
 
-                            <span style={{ paddingLeft: "4rem" }}>title: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: </span>
                             <span style={{ color: "#ffe28f" }}>"This is the title of the first section"</span>,
                             <span style={{ color: "#97ebad" }}> // the title of the section</span><br />
 
-                            <span style={{ paddingLeft: "4rem" }}>lessons: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lessons: </span>
                             <span style={{ color: "#73e3ee" }}>my_lessons</span>
                             <span style={{ color: "#97ebad" }}> // an array of lessons</span><br />
 
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#125;</span>, <br />
-                            <span style={{ paddingLeft: "2rem" }}>...</span>
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#125;</span>, <br />
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;...</span>
                             <span style={{ color: "#97ebad" }}> // other sections</span><br />
                             ]
                         </>
@@ -151,18 +159,18 @@ const TheGuideInput = () => {
                     <CodeContainer code={
                         <>
                             <span style={{ color: "#d7b7ff" }}>const</span> <span style={{ color: "#73e3ee" }}>my_lessons</span> = [<br />
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#123;</span> <br />
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#123;</span> <br />
 
-                            <span style={{ paddingLeft: "4rem" }}>title: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: </span>
                             <span style={{ color: "#ffe28f" }}>"This is the title of the first lesson"</span>,
                             <span style={{ color: "#97ebad" }}> // the title of the lesson</span><br />
 
-                            <span style={{ paddingLeft: "4rem" }}>body: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body: </span>
                             &lt;<span style={{ color: "#9decb3" }}>MyFirstLesson</span>/&gt;
                             <span style={{ color: "#97ebad" }}> // a custom component or a fragment</span><br />
 
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#125;</span>, <br />
-                            <span style={{ paddingLeft: "2rem" }}>...</span>
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#125;</span>, <br />
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;...</span>
                             <span style={{ color: "#97ebad" }}> // other lessons</span><br />
                             ]
                         </>
@@ -171,18 +179,18 @@ const TheGuideInput = () => {
                         <>
                             <span style={{ color: "#d7b7ff" }}>const</span> <span style={{ color: "#73e3ee" }}>my_lessons</span>
                             : <span style={{ color: "#9decb3" }}>FastGuideLesson<span style={{ color: "#d7b7ff" }}>[]</span> </span> = [<br />
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#123;</span> <br />
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#123;</span> <br />
 
-                            <span style={{ paddingLeft: "4rem" }}>title: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: </span>
                             <span style={{ color: "#ffe28f" }}>"This is the title of the first lesson"</span>,
                             <span style={{ color: "#97ebad" }}> // the title of the lesson</span><br />
 
-                            <span style={{ paddingLeft: "4rem" }}>body: </span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body: </span>
                             &lt;<span style={{ color: "#9decb3" }}>MyFirstLesson</span>/&gt;
                             <span style={{ color: "#97ebad" }}> // a custom component or a fragment</span><br />
 
-                            <span style={{ paddingLeft: "2rem", color: "#ffe28f" }}>&#125;</span>, <br />
-                            <span style={{ paddingLeft: "2rem" }}>...</span>
+                            <span style={{ color: "#ffe28f" }}>&nbsp;&nbsp;&nbsp;&nbsp;&#125;</span>, <br />
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;...</span>
                             <span style={{ color: "#97ebad" }}> // other lessons</span><br />
                             ]
                         </>
